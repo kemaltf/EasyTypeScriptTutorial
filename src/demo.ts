@@ -1,11 +1,11 @@
 interface Contact {
   id: number;
   name: string;
-  birthDate: Date;
+  birthDate?: Date;
 }
 
+// if we decided to not filled the birthDate, we can add "?" on the property
 let primaryContact: Contact = {
-  birthDate: new Date("11-02-2022"),
   id: 123,
   name: "kemal",
 };
