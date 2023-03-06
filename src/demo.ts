@@ -1,11 +1,11 @@
-let x: number;
-let y: string;
-let z: boolean;
-let a: Date;
-// you can define as any in here
-let b: string[];
+interface Contact {
+  id: number;
+  name: string;
+  birthDate: Date;
+}
 
-// or you can define "as any" in here
-b = "Hello!" as any;
-b = 1234 as any;
-z = true;
+let primaryContact: Contact = {
+  birthDate: new Date("11-02-2022"),
+  id: 123,
+  name: "kemal",
+};
